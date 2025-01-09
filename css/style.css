@@ -10,15 +10,21 @@ body{
 .base{
     width:1480px;
     margin-inline: auto;
+    font-style: normal;
+
 }
 
 .base p{
     color: white;
-    margin: 10px;
+    margin: 3px;
 }
 
 .PBaseContent{
     flex-basis: 600px;
+}
+
+.PBaseContent p,h1{ 
+    margin: 0px;
 }
 
 .baseContent img{
@@ -103,7 +109,10 @@ body{
     padding: 30px;
     border-radius: 50px;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
 
+    width: 230px;
 }
 
 
@@ -150,7 +159,24 @@ body{
 }
 
 .content2 p{
-    padding: 20px;
+    padding: 8px;
+}
+
+.base p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , div , input , button , label , select , option , textarea , p{   
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.base input{
+    border: 0px;
+}
+
+.TB input{
+    height: 45px;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
 }
 
 

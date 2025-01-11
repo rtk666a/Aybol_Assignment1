@@ -1,184 +1,187 @@
-h1 {
-    font-size: 10em;
-} 
-body{
+.base p, h1, h2, h3, h4, h5, h6, a, span, div, input, button, label, select, option, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     background-color: #4915F8;
 }
 
-
-
-.base{
-    width:1480px;
-    margin-inline: auto;
-    font-style: normal;
-
+h1 {
+    font-size: 10em;
+    margin: 0;
 }
 
-.base p{
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+.base {
+    max-width: 100%;
+    width: 1480px;
+    margin-inline: auto;
+    font-style: normal;
+}
+
+.base p {
     color: white;
     margin: 3px;
 }
 
-.PBaseContent{
+.P_BaseContent {
     flex-basis: 600px;
+    
 }
 
-.PBaseContent p,h1{ 
-    margin: 0px;
+.P_BaseContent p, h1 {
+    margin: 0;
 }
 
-.baseContent img{
-    width: 100%; 
+.baseContent {
+    display: flex;
+    flex: 1;
+    margin-top: 100px;
 }
 
-@media screen and (max-width :1600px) {
-    .base{
-        width:1260px;
+.baseContent .PBaseContent {
+    margin-top: 70px;
+}
+
+.baseContent img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #eb8541;
+    color: white;
+    font-size: 17px;
+}
+
+.TryButton input, .PBaseContent input {
+    width: 230px;
+}
+
+.middleContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.bottomContent div {
+    flex-basis: 550px;
+    padding: 20px;
+}
+
+.bottomContent .content1, .content2 {
+    height: 400px;
+}
+
+.content1 p, .content2 p {
+    padding: 5px;
+}
+
+.headline {
+    font-size: 35px;
+    color: #FFFFFF;
+    margin-top: 150px;
+}
+
+.sub-headline h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.featured {
+    color: #BEB6F7;
+    font-size: 20px;
+}
+
+.explore-more {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.section-title {
+    font-size: 30px;
+    color: white;
+    margin: 14px;
+}
+
+/* Image Styles */
+.bottomContent img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1600px) {
+    .base {
+        width: 1260px;
     }
 }
 
-@media screen and (max-width :1340px) {
-    .base{
-        width:1080px;
+@media screen and (max-width: 1340px) {
+    .base {
+        width: 1080px;
     }
-} 
+}
 
-@media screen and (max-width :1200px) {
-    .base{
-        width:860px;
+@media screen and (max-width: 1200px) {
+    .base {
+        width: 860px;
     }
-} 
+}
 
-@media screen and (max-width :860px) {
-    .base{
-        width:100%;
+@media screen and (max-width: 860px) {
+    .base {
+        width: 100%;
     }
 }
 
 .topHeader{
     display: flex;
-    margin-bottom: 80px;
-
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.topHeader div{
-    flex:1;
+.TryButton input{
+    justify-content: flex-end;
 }
+
 .ButtonsLogin{
     display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 200px;
 }
 
-.ButtonsLogin div{
-    justify-content: center;
-
+.SignIn{
+    margin-right: 30px;
+    margin-top: 12px;
 }
 
-.ButtonsLogin .SIn{
-    text-align: right;
-    margin-right: 18px;
-    margin-top: 8px;
-}
-
-.ButtonsLogin .TB{
-    
-}
-
-.ButtonsLogin .TB input{
-    padding: 10px;
-    border-radius: 20px;
-    width: 130px;
-    background-color: #eb8541;
+.SignIn a{
+    text-decoration: none;
     color: white;
 }
-
-.baseContent .PBaseContent{
-    margin-top: 70px;
-}
-
-.baseContent{
-    display: flex;
-    flex:1;
-}
-
-.baseContent div{
-    margin-top: 30px;
-}
-
-.baseContent .PBaseContent input{
-    background: #eb8541;
-    padding: 30px;
-    border-radius: 50px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-
-    width: 230px;
-}
-
-
-.Pcontent{
-    display: flex;
-    justify-content: center;
-    margin: 80px;
-}
-
-
-
-.bottomContent{
-    display: flex;
-    flex:1;
-    width: 1200px;
-    justify-content: center;
-    margin-left: 7%;
-}
-
-.bottomContent div{
-   margin: 14px;
-}
-
-
-.bottomContent img{
-    width: 100%;
-}
-
-.bottomContent{
-   justify-content: center;
-   display: flex;
-}
-.bottomContent div{
-    flex-basis: 550px;
-
-}
-
-.bottomContent .content1,.content2{
-    height: 400px;
-}
-
-.content1 p{
-    padding: 5px;
-}
-
-.content2 p{
-    padding: 8px;
-}
-
-.base p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , div , input , button , label , select , option , textarea , p{   
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-.base input{
-    border: 0px;
-}
-
-.TB input{
-    height: 45px;
-    width: 150px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-
-}
-
-
-
-

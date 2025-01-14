@@ -32,16 +32,25 @@ h1 {
 
 .base p {
     color: white;
-    margin: 3px;
+    margin: 0px;
 }
 
-.P_BaseContent {
+.baseTextContent {
+    margin-top: 60px;
     flex-basis: 600px;
     
 }
 
-.P_BaseContent p, h1 {
-    margin: 0;
+.baseTextContent p, h1 {
+    margin-bottom: 20px;
+}
+
+.headline{
+    font-size: 30px;
+}
+
+.baseTextContent ,.description {
+    font-size: 20px;
 }
 
 .baseContent {
@@ -50,32 +59,46 @@ h1 {
     margin-top: 100px;
 }
 
-.baseContent .PBaseContent {
-    margin-top: 70px;
-}
+
 
 .baseContent img {
     max-width: 100%;
     height: auto;
 }
 
-.cta-button {
+
+.try-button {
+    border: 0px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: #eb8541;
     color: white;
     font-size: 17px;
+    width: 200px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 15px;
 }
 
-.TryButton input, .PBaseContent input {
-    width: 230px;
+.top-button{
+    border: 0px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #eb8541;
+    color: white;
+    font-size: 17px;
+    height: 55px;
+    width: 180px;
+
 }
+
 
 .middleContent {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 80px 0;
+    margin-top: 200px;
 }
 
 .bottomContent {
@@ -98,6 +121,7 @@ h1 {
 
 .content1 p, .content2 p {
     padding: 5px;
+
 }
 
 .headline {
@@ -107,13 +131,13 @@ h1 {
 }
 
 .sub-headline h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 
 .featured {
     color: #BEB6F7;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .explore-more {
@@ -126,6 +150,7 @@ h1 {
     font-size: 30px;
     color: white;
     margin: 14px;
+    margin-left: 5px;
 }
 
 /* Image Styles */
@@ -178,7 +203,7 @@ h1 {
 
 .SignIn{
     margin-right: 30px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 .SignIn a{
